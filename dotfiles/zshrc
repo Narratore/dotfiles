@@ -1,0 +1,25 @@
+# OMHYZSH
+ZSH=~/.oh-my-zsh
+ZSH_THEME="spaceship"
+plugins=(brew common-aliases docker docker-compose git git-flow git-hubflow github mix osx tig tmux web-search)
+source $ZSH/oh-my-zsh.sh
+
+# Spaceship Config
+SPACESHIP_PROMPT_ORDER=(
+  exit_code     # Exit code section
+  time          # Time stampts section
+  user          # Username section
+  dir           # Current directory section
+  git           # Git section (git_branch + git_status)
+  line_sep      # Line break
+  char          # Prompt character
+)
+SPACESHIP_EXIT_CODE_SHOW=true
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_DIR_TRUNC=2
+
+# Exports
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git --ignore _builds --ignore deps --ignore node_modules -g ""'
+
+# Sources
+source $HOME/.secrets.sh
