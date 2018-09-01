@@ -64,11 +64,9 @@ nmap <Leader>; <Esc>:Explore<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufRead,BufNewFile *.html set filetype=html.htmldjango
 au BufRead,BufNewFile *.py set filetype=python.django
-au FileType python set omnifunc=jedi#completions shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=80 completeopt-=preview
+au FileType python set shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=80 completeopt-=preview
 au FileType elixir set colorcolumn=80
 au BufWritePre * :%s/\s\+$//e
-au WinLeave * set nocursorline nocursorcolumn
-au WinEnter * set cursorline cursorcolumn
 au VimEnter * RainbowParenthesesToggleAll
 
 
@@ -101,7 +99,6 @@ set ignorecase
 set ruler
 set number
 set wildmenu
-set nocursorline
 set novisualbell
 set mouse=a
 set ttymouse=sgr
@@ -115,11 +112,11 @@ set foldlevel=2
 set foldnestmax=10
 set foldmethod=indent
 
-
 " Miscellaneous
 set confirm
-set nobackup
 set noshowcmd
+set nobackup
+set nowritebackup
 set noswapfile
 set backspace=2
 set clipboard=unnamed
@@ -129,8 +126,8 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*deps/*,*_build/*,*node_modules/*
 set ttyfast
 set lazyredraw
 set ttyscroll=3
-set synmaxcol=128
 set regexpengine=1
+set synmaxcol=128
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
