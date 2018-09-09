@@ -31,10 +31,12 @@ Plug 'w0rp/ale'
 """" Eye candy
 Plug 'Yggdroot/indentLine'
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'reedes/vim-colors-pencil'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ap/vim-css-color'
+
+"""" Themes
+Plug 'reedes/vim-colors-pencil'
 
 """" Syntax
 Plug 'sheerun/vim-polyglot'
@@ -52,12 +54,12 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key Maps
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <Space> i
-nmap <C-i> ggvG=<CR>
-nmap ; <Esc>:Files<CR>
-nmap <Leader>, <Esc>:Ag<CR>
-nmap <Leader>. <Esc>:Buffers<CR>
-nmap <Leader>; <Esc>:Explore<CR>
+map <Space> i
+map <C-i> ggvG=<CR>
+map ; <Esc>:Files<CR>
+map <Leader>, <Esc>:Ag<CR>
+map <Leader>. <Esc>:Buffers<CR>
+map <Leader>; <Esc>:Explore<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Autocommands
@@ -115,6 +117,7 @@ set foldmethod=indent
 " Miscellaneous
 set confirm
 set noshowcmd
+set modifiable
 set nobackup
 set nowritebackup
 set noswapfile
@@ -150,7 +153,6 @@ hi Comment cterm=italic
 colorscheme pencil
 
 let python_highlight_all = 1
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airlines Options
