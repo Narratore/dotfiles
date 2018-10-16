@@ -23,11 +23,11 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git --ignore _builds --ignore 
 export ICLOUD_DRIVE="/Users/AlvaroLizama/Library/Mobile Documents/com~apple~CloudDocs/"
 export RESTIC_REPOSITORY=$ICLOUD_DRIVE"/.backups"
 export DRONE_SERVER=https://ci.resuelve.io
-export LDFLAGS="-L/usr/local/opt/node@8/lib"
-export CPPFLAGS="-I/usr/local/opt/node@8/include"
-
- 
 
 # Sources
 source $HOME/.secrets.sh
 export PATH="/usr/local/opt/node@8/bin:$PATH"
+
+# ASDF
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
