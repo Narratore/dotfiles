@@ -61,6 +61,10 @@ map <Leader>, <Esc>:Ag<CR>
 map <Leader>. <Esc>:Buffers<CR>
 map <Leader>; <Esc>:Explore<CR>
 
+inoremap jj <esc>
+inoremap jk <esc>
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Autocommands
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
