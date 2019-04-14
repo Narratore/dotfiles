@@ -36,7 +36,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ap/vim-css-color'
 
 """" Themes
-Plug 'reedes/vim-colors-pencil'
+Plug 'arcticicestudio/nord-vim'
 
 """" Syntax
 Plug 'sheerun/vim-polyglot'
@@ -154,7 +154,7 @@ syntax on
 set t_Co=256
 set background=dark
 hi Comment cterm=italic
-colorscheme pencil
+colorscheme nord
 
 let python_highlight_all = 1
 
