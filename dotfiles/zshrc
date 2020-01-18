@@ -21,6 +21,10 @@ SPACESHIP_DIR_TRUNC=2
 # Exports
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git --ignore _builds --ignore deps --ignore node_modules -g ""'
 export ICLOUD_DRIVE="/Users/AlvaroLizama/Library/Mobile Documents/com~apple~CloudDocs/"
+export LC_ALL=en_US.UTF-8
+export PATH="/usr/local/opt/node@12/bin:$PATH"
+
+PATH="$PATH:/Users/alvarolizama/.mix/escripts"
 
 # Sources
 source $HOME/.extra.sh
