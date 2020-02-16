@@ -7,12 +7,11 @@
 - Install nordtheme for Terminal.app from https://www.nordtheme.com/
 - Install dependencies
 
-      brew install ctags the_silver_searcher fzf reattach-to-user-namespace tmux vim
+      brew install ctags the_silver_searcher fzf reattach-to-user-namespace tmux vim starship
 
 ## Install dotfiles
 
 - Clone this repo in __$HOME/.dotfiles__
-- Create __$HOME/.secrets.sh__
 - Create __$HOME/.extra.sh__
 - Run .dotfiles/install.sh
 - Install VIM plugins with: __:PlugInstall__
