@@ -70,6 +70,7 @@ inoremap jk <esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufRead,BufNewFile *.html set filetype=html.htmldjango
 au BufRead,BufNewFile *.py set filetype=python.django
+au BufWritePost *.exs,*.ex silent :!mix format %
 au FileType python set shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=80 completeopt-=preview
 au FileType elixir set colorcolumn=80
 au BufWritePre * :%s/\s\+$//e
@@ -147,6 +148,7 @@ let g:netrw_banner = 0
 let mapleader = "\\"
 let g:loaded_matchparen=1
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Theme and Colors Options
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -157,6 +159,7 @@ hi Comment cterm=italic
 colorscheme nord
 
 let python_highlight_all = 1
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airlines Options
@@ -179,7 +182,10 @@ let g:rbpt_loadcmd_toggle = 1
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 let g:ale_lint_on_save = 1
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Alchemy Options
+" FZF Options
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:alchemist_compile_basepath = "/app/src/"
+let g:fzf_preview_window = 'right:60%'
+
+
