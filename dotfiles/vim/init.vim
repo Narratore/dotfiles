@@ -182,6 +182,13 @@ let g:rbpt_loadcmd_toggle = 1
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 let g:ale_lint_on_save = 1
 
+let g:ale_linters = {}
+let g:ale_linters.elixir = ['elixir-ls']
+
+let g:ale_elixir_elixir_ls_release = '/Users/alvarolizama/.elixir-ls/rel'
+
+let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " FZF Options
