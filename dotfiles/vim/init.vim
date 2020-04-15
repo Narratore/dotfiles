@@ -25,9 +25,6 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'cohama/agit.vim'
 
-"""" Linters
-Plug 'w0rp/ale'
-
 """" Eye candy
 Plug 'Yggdroot/indentLine'
 Plug 'kien/rainbow_parentheses.vim'
@@ -45,7 +42,8 @@ Plug 'slashmili/alchemist.vim'
 """" Other plugins
 Plug 'duggiefresh/vim-easydir'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'wakatime/vim-wakatime'
+Plug 'mhinz/vim-mix-format'
+
 
 
 call plug#end()
@@ -57,9 +55,9 @@ call plug#end()
 map <Space> i
 map <C-i> ggvG=<CR>
 map ; <Esc>:Files<CR>
-map <Leader>, <Esc>:Ag<CR>
-map <Leader>. <Esc>:Buffers<CR>
-map <Leader>; <Esc>:Explore<CR>
+map <Leader>; <Esc>:Ag<CR>
+map <Leader>, <Esc>:Buffers<CR>
+map <Leader>. <Esc>:Explore<CR>
 
 inoremap jj <esc>
 inoremap jk <esc>
@@ -70,7 +68,7 @@ inoremap jk <esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au BufRead,BufNewFile *.html set filetype=html.htmldjango
 au BufRead,BufNewFile *.py set filetype=python.django
-au BufWritePost *.exs,*.ex silent :!mix format %
+"au BufWritePost *.exs,*.ex silent :!mix format %
 au FileType python set shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=80 completeopt-=preview
 au FileType elixir set colorcolumn=80
 au BufWritePre * :%s/\s\+$//e
@@ -120,6 +118,7 @@ set foldnestmax=10
 set foldmethod=indent
 
 " Miscellaneous
+set hidden
 set confirm
 set noshowcmd
 set modifiable
@@ -177,17 +176,10 @@ let g:rbpt_loadcmd_toggle = 1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Ale Options
+" Mix Formater Options
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
-let g:ale_lint_on_save = 1
-
-let g:ale_linters = {}
-let g:ale_linters.elixir = ['elixir-ls']
-
-let g:ale_elixir_elixir_ls_release = '/Users/alvarolizama/.elixir-ls/rel'
-
-let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}
+let g:mix_format_on_save = 1
+let g:mix_format_silent_errors = 1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
