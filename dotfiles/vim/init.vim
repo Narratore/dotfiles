@@ -10,10 +10,6 @@ call plug#begin('~/.vim/plugged')
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'kshenoy/vim-signature'
 
-"""" Tmux
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'jebaum/vim-tmuxify'
-
 """" Code Plugins
 Plug 'Raimondi/delimitMate'
 Plug 'docunext/closetag.vim'
@@ -33,7 +29,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ap/vim-css-color'
 
 """" Themes
-Plug 'arcticicestudio/nord-vim'
+Plug 'chriskempson/base16-vim'
+'
 
 """" Syntax
 Plug 'sheerun/vim-polyglot'
@@ -151,20 +148,21 @@ let g:loaded_matchparen=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Theme and Colors Options
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let base16colorspace=256
+let python_highlight_all = 1
+
 syntax on
 set t_Co=256
 set background=dark
 hi Comment cterm=italic
-colorscheme nord
-
-let python_highlight_all = 1
-
+colorscheme base16-monokai
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airlines Options
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_powerline_fonts = 1
-let g:airline_theme='papercolor'
+let g:airline_theme='base16'
 let g:airline#extensions#tabline#enabled = 1
 
 

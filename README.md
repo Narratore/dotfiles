@@ -4,10 +4,11 @@
 
 - Install OH My ZSH from https://ohmyz.sh
 - Install Spaceship Theme from https://github.com/denysdovhan/spaceship-prompt
-- Install nordtheme for Terminal.app from https://www.nordtheme.com/
 - Install dependencies
 
-      brew install ctags the_silver_searcher fzf reattach-to-user-namespace tmux vim starship
+      brew install ctags the_silver_searcher fzf vim starship
+
+I recommend to use iTerm and dont forget install base16-terminal too.
 
 ## Install dotfiles
 
