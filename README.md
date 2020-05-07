@@ -3,7 +3,6 @@
 ## Install dependencies
 
 - Install OH My ZSH from https://ohmyz.sh
-- Install Spaceship Theme from https://github.com/denysdovhan/spaceship-prompt
 - Install dependencies
 
       brew install ctags the_silver_searcher fzf vim starship
