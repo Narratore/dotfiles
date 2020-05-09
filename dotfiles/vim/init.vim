@@ -30,7 +30,6 @@ Plug 'ap/vim-css-color'
 
 """" Themes
 Plug 'chriskempson/base16-vim'
-'
 
 """" Syntax
 Plug 'sheerun/vim-polyglot'
@@ -51,10 +50,17 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <Space> i
 map <C-i> ggvG=<CR>
-map ; <Esc>:Files<CR>
+map <Leader>\ <Esc>:Files<CR>
+map <Leader>] <Esc>:Explore<CR>
+map <Leader>[ <Esc>:Buffers<CR>
 map <Leader>; <Esc>:Ag<CR>
-map <Leader>, <Esc>:Buffers<CR>
-map <Leader>. <Esc>:Explore<CR>
+map <Leader>' <Esc>:GFiles?<CR>
+map <Leader>. <Esc>:BLines<CR>
+map <Leader>/ <Esc>:Lines<CR>
+map <Leader>= <Esc>:Commits<CR>
+map <Leader>- <Esc>:BCommits<CR>
+
+
 
 inoremap jj <esc>
 inoremap jk <esc>
