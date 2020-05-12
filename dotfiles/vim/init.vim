@@ -49,7 +49,8 @@ call plug#end()
 " Key Maps
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <Space> i
-map <C-i> ggvG=<CR>
+
+map <Leader>gg <Esc>ggvG=<CR>
 map <Leader>\ <Esc>:Files<CR>
 map <Leader>] <Esc>:Explore<CR>
 map <Leader>[ <Esc>:Buffers<CR>
@@ -59,8 +60,6 @@ map <Leader>. <Esc>:BLines<CR>
 map <Leader>/ <Esc>:Lines<CR>
 map <Leader>= <Esc>:Commits<CR>
 map <Leader>- <Esc>:BCommits<CR>
-
-
 
 inoremap jj <esc>
 inoremap jk <esc>
@@ -170,6 +169,7 @@ colorscheme base16-monokai
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
